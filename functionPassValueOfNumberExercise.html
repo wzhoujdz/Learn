@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+</style>
+<script>
+	
+    function functionName(){
+		var appleNumber=1305;
+		var bananaNumber=1445;
+		var orangeNumber=8386;
+		var peachNumber=964;
+		passValueOfNumber(appleNumber,bananaNumber,orangeNumber,peachNumber);
+		passValueOfNumberAdvance(appleNumber,bananaNumber,orangeNumber,peachNumber);
+	}
+	
+	function passValueOfNumber(paramOne,paramTwo,paramThird,paramFourth){
+		if (paramOne>paramTwo&&paramOne>paramThird&&paramOne>paramFourth){
+			console.log(paramOne);
+		}else if(paramTwo>paramOne&&paramTwo>paramThird&&paramTwo>paramFourth){
+			console.log(paramTwo);
+		}else if(paramThird>paramOne&&paramThird>paramTwo&&paramThird>paramFourth){
+			console.log(paramThird);
+		}else{
+			console.log(paramFourth);
+		}
+	}	
+	
+	function passValueOfNumberAdvance(paramOne,paramTwo,paramThird,paramFourth){
+		var maxValue=paramOne;
+		if (maxValue<paramTwo){
+			maxValue=paramTwo;
+		}
+		if (maxValue<paramThird){
+			maxValue=paramThird;
+		}
+		if (maxValue<paramFourth){
+			maxValue=paramFourth;
+		}
+		console.log(maxValue);
+	}	
+	
+	
+</script>
+</head>
+
+
+
+<body onload="functionName()" >
+	passValueOfNumber(appleNumber);
+	function passValueOfNumber(paramOne){
+	}
+	传值相当于赋值
+	上面相当于var paramOne=appleNumber;
+
+
+</body>
+
+
+
+</html>

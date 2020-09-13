@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+
+
+<html>
+
+
+<head>
+
+<script>
+function doOutputValueAndTeachAndLearn(){
+    //  house1  television:1000 chair:50 table:80 bed:300
+	//  house2  television:1500 chair:20 table:60 bed:900
+	//  比较房间家具价格 用到object + > if 
+    var house1={
+		television:2000,
+		chair:150,
+		table:280,
+		bed:900
+	}
+	
+	var house1Price=house1.television+house1.chair+house1.table+house1.bed
+	console.log(house1Price);
+	
+	var house2={
+		television:1500,
+		chair:80,
+		table:160,
+		bed:1100
+	}
+	
+	var house2Price=house2.television+house2.chair+house2.table+house2.bed
+	console.log(house2Price);
+    
+	if(house1Price>house2Price){
+	    console.log("house1价格高");
+	}else{
+	    console.log("house2价格高");
+	}
+}
+</script>
+
+</head>
+
+
+<body onload="doOutputValueAndTeachAndLearn()">
+ 
+</body>
+
+</html>

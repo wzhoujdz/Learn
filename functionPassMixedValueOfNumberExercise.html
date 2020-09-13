@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+</style>
+<script>
+	
+    function functionName(){
+        var value1=90;
+		var symbol="+";
+		var value2=34;
+		twoValueCalculate(value1,symbol,value2);
+		
+	}
+	
+	function twoValueCalculate(value1,symbol,value2){
+		if (symbol=="-"){
+			result=value1-value2;
+			console.log(result);
+		}else if(symbol=="+"){
+			result=value1+value2;
+			console.log(result);
+		}else if(symbol=="*"){
+			result=value1*value2;
+			console.log(result);
+		}else if(symbol=="/"){
+			result=value1/value2;
+			console.log(result);
+		}else if(symbol=="%"){
+			result=value1%value2;
+			console.log(result);
+		}else{
+		    console.log("您输错了");
+		}
+	}
+	
+</script>
+</head>
+
+
+
+<body onload="functionName()" >
+做一个二元计算器比如
+1+1输出2
+2*4输出8
+8/4输出2
+8%3输出2
+8-9输出-1
+使用function完成，参数为第一元，符号，第二元
+此题用到技术有：
+if用途是判断符号
+</body>
+
+
+
+</html>

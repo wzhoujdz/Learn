@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+</style>
+<script>
+	
+    function functionName(){
+		var switchParam=true;
+
+		turnOnOffLight(switchParam);
+	}
+	
+	function turnOnOffLight(switchParam){
+		if (switchParam==true){
+			console.log("Turn on the light");
+		}else if (switchParam==false){
+			console.log("Turn off the light");
+		}
+
+
+	}
+	
+</script>
+</head>
+
+
+
+<body onload="functionName()" >
+Function中可以有0个，1个，多个参数。多个参数时使用","作为分割
+参数可以为：string，number，undefined（几乎不用），null（几乎不用），bool
+NaN是not a number
+</body>
+
+
+
+</html>

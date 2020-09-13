@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style type="text/css">
+	</style>
+	<script>
+		function main(){
+			var method=[{
+				name:"Ali",
+				employerNumber:1801,
+				totalInput:1029,
+				totalProfit:300
+			},{
+				name:"Taobao",
+				employerNumber:3300,
+				totalInput:1001,
+				totalProfit:600
+			},{
+				name:"Tencent",
+				employerNumber:5500,
+				totalInput:2000,
+				totalProfit:600
+			},{
+				name:"HUAWEI",
+				employerNumber:3000,
+				totalInput:2700,
+				totalProfit:300
+			}]
+			var survey=functionPassValue(method);
+			console.log(survey);
+		}	
+		
+		function functionPassValue(method){
+			
+			var totalEmployer=0;
+			var totalInput=0;
+			var totalProfit=0;
+			var totalTax=0;
+			for (var i=0;i<method.length;i=i+1){
+				totalEmployer=method[i].employerNumber+totalEmployer;
+				totalInput=method[i].totalInput+totalInput;
+				totalProfit=method[i].totalProfit+totalProfit;
+				totalTax=(method[i].totalProfit)*0.001+totalTax;
+			}
+			var back={
+				totalEmployer:totalEmployer,	
+				totalInput: totalInput,
+				totalProfit:totalProfit,
+				totalTax:totalTax
+			}
+			return back;
+			
+		}
+	</script>
+</head>
+<body onload="main()" >
+统计XX市公司的经营情况
+传递给统计方法一个数组，这个数组里面包括5个公司对象。每个公司对象有这个公司的名字，员工总数，年收入总额，年利润总额
+对这个数组对象里面的公司进行汇总。返回一个对象，包括该市所有公司的员工总数，年收入总额，年利润总额，及对利润总额收取0.1%的税。
+范例数组[{
+	name:"Bilibili",
+	employerNumber:1100,
+	totalInput:1000,
+	totalProfit:100
+}]
+
+
+</body>
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

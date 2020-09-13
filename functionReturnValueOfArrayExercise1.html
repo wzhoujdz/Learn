@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style type="text/css">
+	</style>
+	<script>
+		function main(){
+			var arrayInput=[12,21,36,98];
+			var arrayOutput=functionReturnValueOfArray(arrayInput);
+			console.log(arrayOutput);
+		}
+		function functionReturnValueOfArray(arrayInput){
+			var arrayOutput=[];
+			for (var i=0;i<arrayInput.length;i++){
+				if (i==arrayInput.length-1){
+					arrayOutput.push(arrayInput[i]+10)
+				}else{
+					arrayOutput.push(arrayInput[i]+arrayInput[i+1])
+				}
+			}
+			
+			return arrayOutput;
+		}
+	</script>
+</head>
+<body onload="main()" >
+新建一个文件functionReturnValueOfArrayExercise1
+定义一个数组，里面全是数字
+比如[12,21,36,98]
+把它传入子方法，在子方法中将其转换成该位置与下一位的和，最后一位与10的和，比如
+[33,57,134,108]
+</body>
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

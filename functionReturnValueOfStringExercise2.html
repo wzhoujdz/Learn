@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style type="text/css">
+	</style>
+	<script>
+		function main(){
+			var name = "小明";
+			var num = 100;
+			var school = "市重点";
+			var result = rank(name,num,school);
+			console.log(result);
+		}
+		
+		function rank(name,num,school){
+			if (num<6&&num>0){
+				if (school=="市重点"){
+					var result = name + "学习好，要保持哦。";
+					return result
+				}else if (school=="普高"){
+					var result = name + "在学校成绩还好，但是要多多努力。";
+					return result
+				}			
+			}else if (num<16&&num>5){
+				if (school=="市重点"){
+					var result = name + "学习好，但还要再努力一点点。";
+					return result
+				}else if (school=="普高"){
+					var result = name + "在学校成绩还行，但是要加把劲。";
+					return result
+				}			
+			}else if (num>15&&num<31){
+				if (school=="市重点"){
+					var result = name + "学习好，但还需努力。";
+					return result
+				}else if (school=="普高"){
+					var result = name + "还行，学习要更加认真。";
+					return result
+				}			
+			}else if (num>29&&num<101){
+				if (school=="市重点"){
+					var result = name + "学习还可以，加把劲就可以了。";
+					return result
+				}else if (school=="普高"){
+					var result = name + "态度要更加认真，上课也要更认真。";
+					return result
+				}			
+			}else if (num>100&&num<201){
+				if (school=="市重点"){
+					var result = name + "要加把劲，争取冲入前100。";
+					return result
+				}else if (school=="普高"){
+					var result = name + "要端正态度，多多学习。";
+					return result
+				}			
+			}
+		}
+		
+		
+		
+	</script>
+</head>
+<body onload="main()" >
+期中考试，年级第几名，根据学生的成绩以及学校等级（共200人），进行反馈学习情况。
+如果这个人是年级前5名，在市重点，提示：XXX学习好，要保持哦。
+如果这个人是年级前5名，在普高，提示：XXX在学校成绩还好，但是要多多努力。
+如果这个人是年级6-15名，在市重点，提示：XXX学习好，但还要再努力一点点。
+如果这个人是年级6-15名，在普高，提示：XXX在学校成绩还行，但是要加把劲。
+如果这个人是年级16-30名，在市重点，提示：XXX学习好，但还需努力。
+如果这个人是年级16-30名，在普高，提示：XXX还行，学习要更加认真。
+如果这个人是年级31-100名，在市重点，提示：XXX学习还可以，加把劲就可以了。
+如果这个人是年级31-100名，在普高，提示：XXX态度要更加认真，上课也要更认真。
+如果这个人是年级101-200名，在市重点，提示：XXX要加把劲，争取冲入前100。
+如果这个人是年级101-200名，在普高，提示：XXX要端正态度，多多学习。
+</body>
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

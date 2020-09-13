@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style type="text/css">
+	</style>
+	<script>
+		function main(){
+			var input=[5,6,2,78,21,555,6,867,21];
+			var pass=functionPass(input);
+			console.log(pass);
+		}
+		function functionPass(input){
+			for (var a=1;a<input.length;a++){
+				for (var i=0;i<input.length-a;i++){
+					if (input[i]>input[i+1]){
+						var bigger=input[i];
+						input[i]=input[i+1];
+						input[i+1]=bigger;
+					}
+				}
+			}
+			return input;
+		}
+
+
+	
+	</script>
+</head>
+<body onload="main()" >
+新建一个文件叫做putNewParamIntoArrayExercise3.html
+定义一个数组比如[5,6,2,78,21,555]，里面有若干项数字，乱序
+将这个数组传入子方法中
+在子方法中处理这个数组：
+将这个数组中的数字从小到大进行排序，[2,5,6,21,78,555]
+在主方法中输出新数组
+[4, 5, 2, 6, 21, 78, 78, 555]
+</body>
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

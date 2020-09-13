@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+</style>
+<script>
+	
+    function main(){
+		var baseArray=[3,44,5,6,234,7456,342,124,7493,3731,3,0,-8];
+		maxValueInArray(baseArray);
+		minValueInArray(baseArray);
+	}
+	
+
+	function maxValueInArray(baseArray){
+		var maxValueInArray=baseArray[0];
+		for (var i=0;i<baseArray.length;i++){
+			if (baseArray[i]>maxValueInArray){
+				maxValueInArray=baseArray[i];
+			}
+		}
+		console.log(maxValueInArray)
+	}
+	
+	function minValueInArray(baseArray){
+		var minValueInArray=baseArray[0];
+		for (var i=0;i<baseArray.length;i++){
+			if (baseArray[i]<minValueInArray){
+				minValueInArray=baseArray[i];
+			}
+		}
+		console.log(minValueInArray)
+	}
+
+	
+
+
+	
+</script>
+</head>
+<body onload="main()" >
+新建一个文件maxValueInArrayExercise
+有一个数组baseArray 
+[1，2，3，4，5，45，56，34234，567576567]
+[2,4,6,7,8]
+[-2,-4,-6,-7,-8，-56756]
+
+请在一个子方法中找出baseArray中最大的值
+567576567
+8
+-2
+
+最后输出最大值，子方法名任取
+
+请在另一个子方法中找出baseArray中最小的值
+1
+2
+-56756
+
+最后输出最小值，子方法名任取
+
+</body>
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

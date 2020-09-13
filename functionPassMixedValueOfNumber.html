@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+</style>
+<script>
+	
+    function functionName(){
+		var appleNumber=22;
+		var bananaNumber=30;
+		var fruitType="grape";
+		var fruitContain="basket";
+		passValueOfNumber(appleNumber,fruitType,bananaNumber,fruitContain);
+	}
+	
+	function passValueOfNumber(paramOne,paramTwo,paramThree,paramFour){
+		var  result=paramOne+paramThree;
+		console.log(result);
+		console.log(paramThree);
+		console.log("put "+paramTwo+" in "+paramFour);
+	
+	}
+	
+</script>
+</head>
+
+
+
+<body onload="functionName()" >
+function中传的参数类型可以单一，也可以混着
+</body>
+
+
+
+</html>

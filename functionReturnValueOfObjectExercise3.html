@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style type="text/css">
+	</style>
+	<script>
+		function main(){
+			var method=[{
+				name:"Huawei",
+				employerNumber:1,
+				totalMoney:2000,
+				totalProfit:11,
+				
+			},{
+				name:"Ali",
+				employerNumber:1,
+				totalMoney:2777,
+				totalProfit:7,
+				
+			},{
+				name:"Baidu",
+				employerNumber:1,
+				totalMoney:7000,
+				totalProfit:14,
+				
+			},{
+				name:"Wangyi",
+				employerNumber:1,
+				totalMoney:3000,
+				totalProfit:3,
+				
+			},{
+				name:"Tencent",
+				employerNumber:1,
+				totalMoney:1000,
+				totalProfit:8,
+				
+			}]
+		
+			var pass=functionReturnValueOfObject(method);
+			console.log(pass);
+			
+		}
+		
+		function functionReturnValueOfObject(method){
+			var maxRatio=0;
+			var secondRatio=0;
+			var difference=0;
+			var methodPush=[];
+			var value=0;
+			
+			for (var i=0;i<method.length;i=i+1){
+			    var currentRatio=method[i].totalProfit/method[i].employerNumber;
+				if (maxRatio<currentRatio){
+					maxRatio=currentRatio;
+					value=i;
+				}
+			}
+			for (var i=0;i<method.length;i=i+1){
+				if (i!=value){
+					methodPush.push(method[i]);
+				}
+			}
+			for (var i=0;i<methodPush.length;i=i+1){
+				if (secondRatio<methodPush[i].totalProfit/methodPush[i].employerNumber){
+					secondRatio=methodPush[i].totalProfit/methodPush[i].employerNumber;
+				}
+			}
+			difference=maxRatio-secondRatio;
+			
+			var back={
+				name:method[value].name,
+				totalMoney:method[value].totalMoney,
+				totalProfit:method[value].totalProfit,
+				totalEmployer:method[value].employerNumber,
+				ratio:method[value].totalProfit/method[value].employerNumber,
+				difference:difference
+			}
+			return back
+		}
+	
+	</script>
+</head>
+<body onload="main()" >
+统计XX市公司的经营情况
+传递给统计方法一个数组,这个数组里面包括5个公司对象。每个公司对象有这个公司的名字,员工总数,年收入总额,年利润总额
+对这个数组对象里面的公司进行统计,颁发本年度经营最好的公司奖章。获得这个奖章的公司就是平均一名员工生产利润的最高,即该公司总利润除以员工数的最高的那个。返回这个公司对象,对象中包括该公司名称,总收入,员工数,总利润,总利润员工比
+
+,以及总利润员工比与第二名的差距值。
+</body>
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

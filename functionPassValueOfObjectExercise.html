@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+</style>
+<script>
+	
+    function functionName(){
+		var information = {
+			UserName:"Alice",
+			Vip:true,
+			HuaweiPrice:4500,
+			HuaweiAmount:1,
+			XiaomiPrice:2500,
+			XiaomiAmount:3,
+			OppoPrice:2000,
+			OppoAmount:0,
+			MeizuPrice:1500,
+			MeizuAmount:0,	
+		};
+		calculateOrder(information);
+	
+	}
+		
+		function calculateOrder(information){
+			var totalPrice=0
+			totalPrice=totalPrice+information.HuaweiAmount*information.HuaweiPrice;
+			totalPrice=totalPrice+information.XiaomiAmount*information.XiaomiPrice;
+			totalPrice=totalPrice+information.OppoAmount*information.OppoPrice;
+			totalPrice=totalPrice+information.MeizuAmount*information.MeizuPrice;
+			//if(totalPrice>4000&&information.Vip==true){
+			//	console.log(information.UserName+"是会员,"+"购买了"+totalPrice+"价格的商品,"+"实付"+totalPrice*0.9+"元")
+			//}else if (totalPrice<4000&&information.Vip==true){
+			//	console.log(information.UserName+"是会员,"+"购买了"+totalPrice+"价格的商品,"+"实付"+totalPrice+"元")
+			//} else if (totalPrice>6000&&information.Vip==false){
+			//	console.log(information.UserName+"不是会员,"+"购买了"+totalPrice+"价格的商品,"+"实付"+totalPrice*0.95+"元")
+			//}else {
+			//	console.log(information.UserName+"不是会员,"+"购买了"+totalPrice+"价格的商品,"+"实付"+totalPrice+"元")
+			//}
+			if(information.Vip==true){
+				if(totalPrice>6000){
+					console.log(information.UserName+"是会员,"+"购买了"+totalPrice+"价格的商品,"+"实付"+totalPrice*0.9+"元");
+				}else{
+				    console.log(information.UserName+"是会员,"+"购买了"+totalPrice+"价格的商品,"+"实付"+totalPrice*0.97+"元");
+				}
+			}else{
+				if(totalPrice>7000){
+					console.log(information.UserName+"不是会员,"+"购买了"+totalPrice+"价格的商品,"+"实付"+totalPrice*0.95+"元");
+				}else{
+					console.log(information.UserName+"不是会员,"+"购买了"+totalPrice+"价格的商品,"+"实付"+totalPrice+"元");
+				}
+			
+			
+			}
+		}
+	
+</script>
+</head>
+
+
+
+<body onload="functionName()" >
+双十一优惠方案
+生成一个用户购物车对象，手机商店
+对象里面包括：
+华为手机，华为手机数量。
+小米手机，小米手机数量。
+oppo手机，oppo手机数量。
+魅族手机，魅族手机数量。
+用户名
+这个用户是否是本店的会员。vip:true
+
+
+优惠方案
+如果是会员，购买价格超过4千，打9折。否则原价
+如果不是会员，购买价格超过6千，打95折。否则原价
+输出：
+孟久翔，不是会员，购买了6000价格的商品，实付6000.
+哆啦A梦，是会员，购买了10000价格的商品，实付9000.
+</body>
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

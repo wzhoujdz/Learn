@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style type="text/css">
+	</style>
+	<script>
+		function main(){
+			var method=[{
+				name:"Tencent",
+				employerNumber:4000,
+				totalMoney:1000,
+				totalProfit:10,
+				
+			},{
+				name:"Huawei",
+				employerNumber:4000,
+				totalMoney:2000,
+				totalProfit:50,
+				
+			},{
+				name:"Ali",
+				employerNumber:4000,
+				totalMoney:2777,
+				totalProfit:5,
+				
+			},{
+				name:"Baidu",
+				employerNumber:4000,
+				totalMoney:7000,
+				totalProfit:200,
+				
+			},{
+				name:"Wangyi",
+				employerNumber:4000,
+				totalMoney:3000,
+				totalProfit:4,
+				
+			}]
+		
+			var pass=functionReturnValueOfObject(method);
+			console.log(pass);
+		}
+		
+		function functionReturnValueOfObject(method){
+			var maxRatio=0;
+			var value=0;
+			for (var i=0;i<method.length;i=i+1){
+				if (maxRatio<method[i].totalProfit/method[i].employerNumber){
+					maxRatio=method[i].totalProfit/method[i].employerNumber;
+					value=i;
+				}
+				
+			}
+			var back={
+				name:method[value].name,
+				totalMoney:method[value].totalMoney,
+				totalProfit:method[value].totalProfit,
+				totalEmployer:method[value].employerNumber,
+				ratio:method[value].totalProfit/method[value].employerNumber
+			}
+			return back
+		}
+		
+		
+	</script>
+</head>
+<body onload="main()" >
+统计XX市公司的经营情况
+传递给统计方法一个数组,这个数组里面包括5个公司对象。每个公司对象有这个公司的名字,员工总数,年收入总额,年利润总额
+对这个数组对象里面的公司进行统计,颁发本年度经营最好的公司奖章。获得这个奖章的公司就是平均一名员工生产利润的最高,即该公司总利润除以员工数的最高的那个。返回这个公司对象,对象中包括该公司名称,总收入,员工数,总利润,总利润员工比
+</body>
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

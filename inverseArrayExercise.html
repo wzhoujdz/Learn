@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+</style>
+<script>
+	function main(){
+		var baseArray=[2,4,6,8,10];
+		inverseArray(baseArray);
+		inverseArray2(baseArray);
+
+	}
+	
+	function inverseArray(baseArray){
+		var baseArrayResult=[]
+		
+		for (var i=0;i<baseArray.length;i++){
+			baseArrayResult.push(baseArray[i]);
+		}
+		
+		for (var i=baseArray.length-1;i>=0;i=i-1){
+			baseArrayResult.push(baseArray[i]);
+		}
+		console.log(baseArrayResult);
+	}
+	
+	function inverseArray2(baseArray){
+		var baseArrayResult=[]
+		
+		for (var i=0;i<2*baseArray.length;i++){
+		    if(i<baseArray.length){
+				baseArrayResult.push(baseArray[i]);
+			}else{
+				baseArrayResult.push(baseArray[baseArray.length-(i-baseArray.length)-1]);
+			}
+			
+		
+		}
+		
+		console.log(baseArrayResult);
+	}
+	
+
+	
+</script>
+</head>
+<body onload="main()" >
+新建一个文件inverseArrayExercise
+有一个数组baseArray 
+[1，2，3，4，5]
+[2,4,6,7,8]
+
+请在一个子方法中将baseArray转换成inverseArray：
+[1，2，3，4，5，5，4，3，2，1]
+[2,4,6,7,8,8,7,6,4,2]
+
+最后输出inverseArray的值，子方法名任取
+
+
+</body>
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

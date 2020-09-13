@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+
+
+<html>
+
+
+<head>
+
+<script>
+function doOutputValueAndTeachAndLearn(){
+	//var you={
+	//    name:"zw",
+	//	height:121
+	//}
+	
+	//var me={
+	//	name:"mjx",
+	//	height:176
+	//}
+	//console.log(you);
+	//console.log(me);
+	
+	var house={
+		TV:2000,
+		light:500,
+		plants:5000,
+		piano:10000,
+		sofa:500,
+		bed:1000
+	}
+	var housePrice=house.TV+house.light+house.plants+house.piano+house.sofa+house.bed;
+	console.log(housePrice);
+	house.piano=12000;
+	house.TV=500;
+	house.bed=500;
+	house.sofa=300;
+	house.light=400;
+	var housePriceAfter1year=house.TV+house.light+house.plants+house.piano+house.sofa+house.bed;
+	console.log(housePriceAfter1year)
+}
+</script>
+
+</head>
+
+
+<body onload="doOutputValueAndTeachAndLearn()">
+
+</body>
+
+</html>

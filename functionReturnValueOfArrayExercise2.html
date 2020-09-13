@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style type="text/css">
+	</style>
+	<script>
+		function main(){
+			var arrayInput=[1,2,3,4,5,6,7,8,9,10,12,13,14,15];
+			var arrayOutput=functionPass(arrayInput);
+			console.log(arrayOutput);
+				
+		}
+		function functionPass (arrayInput){
+			var output=[];
+			var max=0;
+			var secondBig=0;
+			var mini=100;
+			var sum=0;
+			for (i=0;i<arrayInput.length;i++){
+				if (arrayInput[i]>max){
+					max=arrayInput[i];
+				}
+			}
+			for (i=0;i<arrayInput.length;i++){
+				if ((arrayInput[i]>secondBig)&&(arrayInput[i]<max)){
+					secondBig=arrayInput[i];
+				}
+			}
+			for (i=0;i<arrayInput.length;i++){
+				if (arrayInput[i]<mini){
+					mini=arrayInput[i];
+				}
+			}
+			for (i=0;i<arrayInput.length;i++){
+				sum=sum+arrayInput[i];
+			}
+			output.push(max);
+			output.push(secondBig);
+			output.push(mini);
+			output.push(sum);
+			return (output);
+		}
+	</script>
+</head>
+<body onload="main()" >
+新建一个文件functionReturnValueOfArrayExercise2
+定义一个数组，里面全是数字
+比如[1,2,3,4,5,6,7,8,9,10]
+把它传入子方法，在子方法中将其转换成下面数组：
+第一位是最大值
+第二位是第二大的值
+第三位是最小值
+第四位是数组所有数的总和
+[10,9,1,55]
+</body>
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+

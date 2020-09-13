@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style type="text/css">
+	</style>
+	<script>
+		function main(){
+			var input=[1,2,3,4,5,6,7,8,9,10];
+			var pass=functionPass(input);
+			console.log(pass)
+		}
+		function functionPass(input){
+			var changeValue=input[1];
+			input[1]=input[7];
+			input[7]=changeValue;
+			return input;
+		}
+		
+
+	
+	</script>
+</head>
+<body onload="main()" >
+新建一个文件叫做putNewParamIntoArrayExercise.html
+定义一个数组，里面有10项数字
+将这个数组传入子方法中
+在子方法中将这个数组中的第2个和第8个进行数据交换
+将交换后的数组返回给主方法
+在主方法中输出新的数组
+</body>
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

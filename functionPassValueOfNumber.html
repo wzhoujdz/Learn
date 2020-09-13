@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+</style>
+<script>
+	
+    function functionName(){
+		var appleNumber=15;
+		var bananaNumber=25;
+		var coconutNumber=12;
+		var grapeNumber=6;
+
+		passValueOfNumber(appleNumber,bananaNumber,coconutNumber,grapeNumber);
+	}
+	
+	function passValueOfNumber(paramOne,paramTwo,paramThree,paramFour,paramFive){
+	    console.log(paramFive);
+		var  result=paramOne+paramTwo+paramThree+paramFour+paramFive;
+		console.log(result);
+	
+	}
+	
+</script>
+</head>
+
+
+
+<body onload="functionName()" >
+Function中可以有0个，1个，多个参数。多个参数时使用","作为分割
+参数可以为：string，number，undefined（几乎不用），null（几乎不用），bool
+NaN是not a number
+</body>
+
+
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+</style>
+<script>
+	
+    function functionName(milktea){
+		var milktea = {
+			userName:"Yuki",
+			vip:true,
+			vipScore:1098,
+			noNeed:0,
+			boob:0,
+			pudding:1,
+			milkCover:5,
+			mesona:4,
+			grape:3,
+			strawberry:3,
+			mango:2,
+			icecream:2.5,
+			matcha:2.5,
+		};
+		passValue(milktea);
+	
+	}
+		
+		function passValue(Conclusion){
+			var addPrice=0
+			addPrice=addPrice+Conclusion.noNeed;
+			addPrice=addPrice+Conclusion.boob;
+			addPrice=addPrice+Conclusion.pudding;
+			addPrice=addPrice+Conclusion.milkCover;
+			addPrice=addPrice+Conclusion.mesona;
+			addPrice=addPrice+Conclusion.grape;
+			addPrice=addPrice+Conclusion.strawberry;
+			addPrice=addPrice+Conclusion.mango;
+			addPrice=addPrice+Conclusion.icecream;
+			addPrice=addPrice+Conclusion.matcha;
+			if (Conclusion.vip==true){
+				if (Conclusion.vipScore>10000){
+					console.log(Conclusion.userName+"是会员，积分超过10000，加料免费");
+				}else if(Conclusion.vipScore>5000){
+					console.log(Conclusion.userName+"是会员，积分超过5000，加料7.5折，现价"+addPrice*0.75+"元");
+				}else if (Conclusion.vipScore>1000){
+					console.log(Conclusion.userName+"是会员，积分超过1000，加料9折，现价"+addPrice*0.9+"元");
+				}else{
+					console.log(Conclusion.userName+"是会员，原价"+addPrice);
+				}
+			}else{
+				console.log(Conclusion.userName+"不是会员，原价"+addPrice);
+			}
+			
+		}
+			
+	
+</script>
+</head>
+
+
+
+<body onload="functionName()" >
+购买奶茶方案
+不加料
+波霸
+布丁
+奶盖
+仙草
+葡萄
+草莓
+芒果
+冰淇淋
+抹茶
+
+
+加料方案
+如果是会员，积分超过10000，加料免费
+如果是会员，积分超过5000，加料7.5折
+如果是会员，积分超过1000，加料9折
+否则原件
+
+输出：Yuki是会员，积分超过10000，加料免费
+
+
+</body>
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

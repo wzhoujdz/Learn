@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+</style>
+<script>
+	
+    function main(){
+		var calculate=[1,2,3,52,4523,523,54]
+		everyValueMultiplyZeroPointSevenFour(calculate);
+		everyValueMultiplyZeroPointSixEight(calculate);
+		
+	}	
+		
+	function everyValueMultiplyZeroPointSevenFour(calculate){	
+		var calculateResult=[]
+		
+		for (var i=0;i<calculate.length;i=i+1){
+			calculateResult.push(parseInt(calculate[i]*0.74))
+		}
+		console.log(calculateResult);
+	}
+	
+	function everyValueMultiplyZeroPointSixEight(calculate){	
+		var calculateResult=[]
+		
+		for (var i=0;i<calculate.length;i=i+1){
+			calculateResult.push(0-(calculate[i]*0.68))
+		}
+		console.log(calculateResult);
+	}
+		
+
+	
+
+
+	
+</script>
+</head>
+<body onload="main()" >
+新建一个文件functionPassValueOfArrayExercise1
+我有一个数组 calculate  [1,2,3,52,4523,523,54]
+请写第一个方法将这些数据传递进去，输出格式是每一项乘以0.74，之后取整，最后用数组形式输出
+
+请写第二个方法将这些数据传递进去，输出格式是每一项乘以0.68，之后取负数，最后用数组形式输出
+
+两个方法名任意取
+
+</body>
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

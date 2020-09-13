@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+
+
+<html>
+
+
+<head>
+
+<script>
+function doOutputValueAndTeachAndLearn(){
+    //有一个数组[1,2,3,4,5,7,8,9,10]插入6，使其顺序正确。[1,2,3,4,5,6,7,8,9,10]
+	//思路用到testCopy数组，for，if，push；
+	//var test=[1,2,3,4,5,7,8,9,10];
+	//var testCopy=[];
+	//for(var item=0;item<test.length;item=item+1){
+	//	if(item==4){
+	//		testCopy.push(test[item]);
+	//		testCopy.push(6);
+	//	}else{
+	//		testCopy.push(test[item])
+	//	}
+	//}
+	//console.log(testCopy);
+	
+	//有一个数组var test=["wew","ergre","45y45g","gerge","saf3"],数组不定
+	//在数组第var index=3 项后插入 var insertValue="wef",index和insertValue不定
+	//var test=["aww","bfffe","c45y45g","dhdhde","elyvd","fsifa4"];
+	//var index=4;
+	//var insertValue="uuu";
+	//var testCo=[];
+	//for(item=0;item< test.length;item=item+1){
+	//	if(item==index){
+	//		testCo.push(test[item]);
+	//		testCo.push(insertValue);
+	//	}else{
+	//		testCo.push(test[item]);
+	//	}
+	//}
+	//console.log(testCo);
+	
+	//数组查重 var test=[1,2,3,4,7,24234,234,43,6,35,75,234,765,234,65,345];如果数组中有至少两个相同的数，就报警输出"有重复"。
+	//                                相反，如果数组中的数都是唯一的，报警输出"没有重复"
+	//用到if，两个嵌套的for，用一个变量当作全局的判断是否有重复
+	var test=["asd","222","sss","odhd","222"];
+	var isAlone=false;
+	for(var i=0;i<test.length-1;i=i+1){
+		for(var j=i+1;j<test.length;j=j+1){
+			if(test[i]==test[j]){
+				isAlone=true;
+			}else{
+			}
+		}
+	}
+	if(isAlone==true){
+		console.log("有重复");
+	}else{
+		console.log("没有重复");
+	}
+	 
+	
+}
+</script>
+
+</head>
+
+
+<body onload="doOutputValueAndTeachAndLearn()">
+<div style="width:100px;height:100px;background:red;border-top-left-radius:40px;" > 
+
+</div>  
+</body>
+
+</html>

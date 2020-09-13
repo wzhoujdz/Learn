@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style type="text/css">
+	</style>
+	<script>
+		function main(){
+			var input=[7,2,109,4,97,6,3,85,1,10];
+			var pass=functionPass(input);
+			console.log(pass);
+		}
+		function functionPass(input){
+			for (var i=0;i<input.length-1;i++){
+				if (input[i]>input[i+1]){
+					var bigger=input[i];
+					input[i]=input[i+1];
+					input[i+1]=bigger;
+				}
+			}
+			return input;
+		}
+
+	
+	</script>
+</head>
+<body onload="main()" >
+新建一个文件叫做putNewParamIntoArrayExercise2.html
+定义一个数组，里面有若干项数字，乱序
+将这个数组传入子方法中
+在子方法中处理这个数组：
+从第一项到倒数第二项，逐个操作，将当前这一项与它后面的一项进行比较，把大的数放在后面，把小的数放在前面。
+将操作后的数组返回给主方法
+在主方法中输出新数组
+
+[7,2,66,4,97,6,3,8,1,10]
+[2,7,4,66,6,3,8,1,10,97]
+</body>
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

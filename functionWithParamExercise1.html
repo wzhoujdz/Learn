@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+</style>
+<script>
+	
+    function functionName(){
+		var name="kerry";
+		divideNameIntoGroup(name);
+		judgeJobFromName(name);
+
+		
+		
+	}
+	
+	function divideNameIntoGroup(name){
+		if (name=="judy"||name=="prepare"||name=="joy"){
+			console.log("我是"+name+"分在A组");
+		}else if(name=="sandy"||name=="ben"||name=="yoyo"){
+			console.log("我是"+name+"分在B组");
+		}else{
+			console.log("我是"+name+"分在C组");
+		}
+    }
+	
+	function judgeJobFromName(name){
+		if (name=="judy"||name=="prepare"||name=="joy"){
+			console.log("我是"+"教师");
+		}else if(name=="sandy"||name=="ben"||name=="yoyo"){
+			console.log("我是"+"研究员");
+		}else{
+			console.log("我是"+"玩偶");
+		}
+    }
+	
+	
+
+	
+
+	
+</script>
+</head>
+
+
+
+<body onload="functionName()" >
+给名字分组，只使用一个方法解决问题，该方法名字是divideNameIntoGroup(name)
+如果名字是judy，prepare，joy，输出我是mingzi,分在A组
+如果名字是sandy，ben，yoyo，输出我是mingzi,分在B组
+剩下所有名字，输出我是mingzi，分在C组
+</body>
+
+
+
+</html>

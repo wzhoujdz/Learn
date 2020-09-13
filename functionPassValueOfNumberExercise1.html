@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+</style>
+<script>
+	
+    function functionName(){
+		var appleNumber=-133;
+		var bananaNumber=-145;
+		var orangeNumber=-386;
+		var peachNumber=-94;
+		var grapeNumber=-24;
+		var melonNumber=-6;
+		findMinimumNumber(appleNumber,bananaNumber,orangeNumber,peachNumber,grapeNumber,melonNumber);
+	}
+	
+	
+	function findMinimumNumber(paramOne,paramTwo,paramThree,paramFour,paramFive,paramSix){
+		var maxValue=paramOne;
+		if (maxValue>paramTwo){
+			maxValue=paramTwo;
+		}
+		if (maxValue>paramThree){	
+			maxValue=paramThree;
+		}
+		if (maxValue>paramFour){
+			maxValue=paramFour;
+		}
+		if (maxValue>paramFive){
+			maxValue=paramFive;
+		}
+	    if (maxValue>paramSix){
+			maxValue=paramSix;
+	    }
+		console.log(maxValue)
+	}	
+	
+	
+</script>
+</head>
+
+
+
+<body onload="functionName()" >
+复习：
+给出6个数字，使用方法判断出其中的最小值；
+
+代码优化建议
+1、方法的命名，查找最小值，test是否合适？
+2、找到最小值，maxValue命名是否合适
+3、if中{}对齐方式是否按照标准？
+4、命名规范是否按照了驼峰式规范
+</body>
+
+
+
+</html>

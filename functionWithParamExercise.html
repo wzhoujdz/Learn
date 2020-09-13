@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+</style>
+<script>
+	
+    function functionName(){
+		var name="amy";
+		if (name=="judy"||name=="prepare"||name=="joy"){
+			functionA(name);
+		}else if(name=="sandy"||name=="ben"||name=="yoyo"){
+			functionB(name);
+		}else{
+			functionC(name);
+		}
+		
+	
+	}
+	function functionA(name){
+		console.log("我是"+name+"分在A组")
+	}
+	function functionB(name){
+		console.log("我是"+name+"分在B组")
+	}
+	function functionC(name){
+		console.log("我是"+name+"分在C组")
+	}
+
+	
+
+	
+</script>
+</head>
+
+
+
+<body onload="functionName()" >
+给名字分组
+如果名字是judy，prepare，joy，输出我是mingzi,分在A组
+如果名字是sandy，ben，yoyo，输出我是mingzi,分在B组
+剩下所有名字，输出我是mingzi，分在C组
+</body>
+
+
+
+</html>
