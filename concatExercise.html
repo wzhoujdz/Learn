@@ -6,7 +6,45 @@
 	</style>
 	<script>
 		function main(){
+			var class1=[{
+				name:"Emily",
+				age:17,
+				isBoy:false
+			},{
+				name:"Cindy",
+				age:16,
+				isBoy:false
+			},{
+				name:"Jack",
+				age:18,
+				isBoy:true
+			}]
+			var class2=[{
+				name:"Cici",
+				age:14,
+				isBoy:false
+			},{
+				name:"James",
+				age:18,
+				isBoy:true
+			},{
+				name:"Jim",
+				age:16,
+				isBoy:true
+			},{
+				name:"Luna",
+				age:15,
+				isBoy:false
+			}]
+			var pass=functionPass(class1,class2);
+			console.log(pass);
 		}
+		
+		function functionPass(class1,class2){
+			var combine=class2.concat(class1);
+			return(combine);
+		}
+		
 
 
 	

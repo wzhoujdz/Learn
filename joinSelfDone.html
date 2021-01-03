@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style type="text/css">
+	</style>
+	<script>
+		function main(){
+			var character=["dd","ww","xx"];
+			var symbol="*";
+			var pass=functionPassValue(character,symbol);
+			console.log(pass);
+		}
+		function functionPassValue(character,symbol){
+			var newcha=""
+			for(var i=0;i<character.length;i++){
+				if(i<character.length-1){
+					newcha=newcha+character[i]+symbol;
+				}else{
+					newcha=newcha+character[i];
+				}
+			}
+			return(newcha);
+		}
+
+	</script>
+</head>
+<body onload="main()" >
+新建一个文件叫做joinSelfDone.html
+有一个数组，数组当中的每一项是一个字符串，将这个数组传入子方法，并将分隔符传入子方法。在子方法中将这些字符串合并成一个以分隔符进行分割的长字符串,将这个长字符串返回给主方法，在主方法中输出这个长字符串
+
+例：
+a=['please','help','me'];
+symbol='-';
+
+b(a,symbol);
+
+please-help-me
+
+</body>
+
+
+
+</html>
+
+
+

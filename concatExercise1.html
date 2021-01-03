@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style type="text/css">
+	</style>
+	<script>
+		function main(){
+			var class1=[{
+				name:"Emily",
+				age:19,
+				isBoy:false
+			},{
+				name:"Cindy",
+				age:15,
+				isBoy:false
+			},{
+				name:"Jack",
+				age:18,
+				isBoy:true
+			},{
+				name:"Tony",
+				age:20,
+				isBoy:true
+			}]
+			var class2=[{
+				name:"James",
+				age:22,
+				isBoy:true
+			},{
+				name:"Eric",
+				age:20,
+				isBoy:true
+			},{
+				name:"Jasmine",
+				age:17,
+				isBoy:false
+			},{
+				name:"Alice",
+				age:19,
+				isBoy:false
+			},{
+				name:"Tom",
+				age:19,
+				isBoy:true
+			}]
+			
+			var pass=functionPassValue(class1,class2);
+			console.log(pass);
+		}
+		
+		function functionPassValue(class1,class2){
+			var combine=class2.concat(class1);
+			var num=0;
+			for (var i=0;i<combine.length;i++){
+				if(combine[i].age>18&&combine[i].age<22&&combine[i].isBoy==true){
+					num=num+1;
+				}
+			}
+			return(num);
+			
+		}
+		
+		
+		
+
+
+	
+	</script>
+</head>
+<body onload="main()" >
+新建一个文件concatExercise1.html
+两个班合并
+在主方法中有两个班级数组，每个数组中都有若干学员对象，每个学员对象包括学生姓名，学生成绩，学生是否为男生。将这两个学生数组传入子方法，在子方法中将这两个学生数组合并成一个数组。
+请统计新的班级中，男生且年龄在19到21（包括19和21）的学生人数
+将学生人数返回给主方法。在主方法中输出统计的学生人数
+
+</body>
+
+
+
+</html>
+
+
+
