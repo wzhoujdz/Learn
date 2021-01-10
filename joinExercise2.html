@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style type="text/css">
+	</style>
+	<script>
+		function main(){
+			var chara = ["I","am","so","good"];
+			var pass=functionPassValue(chara);
+			console.log(pass);
+		}
+		
+		function functionPassValue(chara){
+			var inverse=[];
+			for (var i=chara.length-1;i>=0;i--){
+				inverse.push(chara[i]);
+			}
+			var combine=inverse.join('!');
+			return(combine);
+		}
+	</script>
+</head>
+<body onload="main()" >
+新建一个文件joinExercise2.html
+
+有一个字符串数组，每个字符串代表一个单词，将这个数组传入子方法中，在子方法中将这些单词倒序并用!分割，组成一个长字符串，返回给主方法。在主方法中输出这个长字符串
+
+例子
+a=['my','name','is','zw'];
+
+输出zw!is!name!my
+
+</body>
+
+
+
+</html>
+
+
+
