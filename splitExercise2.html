@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style type="text/css">
+	</style>
+	<script>
+		function main(){
+			var secrect="o@#@j@#@i@#@b@#@p";
+			var functionPass=pass(secrect);
+			console.log(functionPass);
+			
+		}
+		function pass(secrect){
+			var dictionary={
+				a:'z',
+				b:'a',
+				c:'b',
+				d:'c',
+				e:'d',
+				f:'e',
+				g:'f',
+				h:'g',
+				i:'h',
+				j:'i',
+				k:'j',
+				l:'k',
+				m:'l',
+				n:'m',
+				o:'n',
+				p:'o',
+				q:'p',
+				r:'q',
+				s:'r',
+				t:'s',
+				u:'t',
+				v:'u',
+				w:'v',
+				x:'w',
+				y:'x',
+				z:'y',
+				
+			}
+			var firstStep=secrect.split("@#@");
+			
+			for(var i=0;i<firstStep.length;i++){
+				firstStep[i]=dictionary[firstStep[i]]
+			}
+			
+			return(firstStep);
+		}
+
+	</script>
+</head>
+<body onload="main()" >
+新建一个文件splitExercise1.html
+有一个加密的字符串，加密格式为26个英文字母搓后一位，并以@#@分割
+请将这个字符串解析成明文
+
+具体实施
+在主方法中定义一个加密字符串，将这个字符串传给子方法，在子方法中解密，将解密数据返回给主方法，在主方法中输出这个明文
+
+例子
+y@#@v@#@i@#@v@#@j
+
+明文是
+['x','u','h','u','i']
+
+提示
+使用for
+使用if
+
+</body>
+
+
+
+</html>
+
+
+

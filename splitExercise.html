@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style type="text/css">
+	</style>
+	<script>
+		function main(){
+			var secrect="o@#@j@#@i@#@b@#@p";
+			var functionPass=pass(secrect);
+			console.log(functionPass);
+			
+		}
+		function pass(secrect){
+			var firstStep=secrect.split("@#@");
+			console.log(firstStep);
+			for (var i=0;i<firstStep.length;i++){
+				if(firstStep[i]=="a"){
+					firstStep[i]="z";
+				} else if(firstStep[i]=="b"){
+					firstStep[i]="a";
+				}else if(firstStep[i]=="c"){
+					firstStep[i]="b";
+				}else if(firstStep[i]=="d"){
+					firstStep[i]="c";
+				}else if(firstStep[i]=="e"){
+					firstStep[i]="d";
+				}else if(firstStep[i]=="f"){
+					firstStep[i]="e";
+				}else if(firstStep[i]=="g"){
+					firstStep[i]="f";
+				}else if(firstStep[i]=="h"){
+					firstStep[i]="g";
+				}else if(firstStep[i]=="i"){
+					firstStep[i]="h";
+				}else if(firstStep[i]=="j"){
+					firstStep[i]="i";
+				}else if(firstStep[i]=="k"){
+					firstStep[i]="j";
+				}else if(firstStep[i]=="l"){
+					firstStep[i]="k";
+				}else if(firstStep[i]=="m"){
+					firstStep[i]="l";
+				}else if(firstStep[i]=="n"){
+					firstStep[i]="m";
+				}else if(firstStep[i]=="o"){
+					firstStep[i]="n";
+				}else if(firstStep[i]=="p"){
+					firstStep[i]="o";
+				}else if(firstStep[i]=="q"){
+					firstStep[i]="p";
+				}else if(firstStep[i]=="r"){
+					firstStep[i]="q";
+				}else if(firstStep[i]=="s"){
+					firstStep[i]="r";
+				}else if(firstStep[i]=="t"){
+					firstStep[i]="s";
+				}else if(firstStep[i]=="u"){
+					firstStep[i]="t";
+				}else if(firstStep[i]=="v"){
+					firstStep[i]="u";
+				}else if(firstStep[i]=="w"){
+					firstStep[i]="v";
+				}else if(firstStep[i]=="x"){
+					firstStep[i]="w";
+				}else if(firstStep[i]=="y"){
+					firstStep[i]="x";
+				}else if(firstStep[i]=="z"){
+					firstStep[i]="y";
+				}
+			}
+			return(firstStep);
+		}
+
+	</script>
+</head>
+<body onload="main()" >
+新建一个文件splitExercise1.html
+有一个加密的字符串，加密格式为26个英文字母搓后一位，并以@#@分割
+请将这个字符串解析成明文
+
+具体实施
+在主方法中定义一个加密字符串，将这个字符串传给子方法，在子方法中解密，将解密数据返回给主方法，在主方法中输出这个明文
+
+例子
+y@#@v@#@i@#@v@#@j
+
+明文是
+['x','u','h','u','i']
+
+提示
+使用for
+使用if
+
+</body>
+
+
+
+</html>
+
+
+
