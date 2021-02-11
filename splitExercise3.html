@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style type="text/css">
+	</style>
+	<script>
+		function main(){
+			var secretString="helpme";
+			var haha=passValue(secretString);
+			console.log(haha);
+		}
+		function passValue(secretString){
+			var firstStep=secretString.split("");
+			for(var i=0;i<firstStep.length;i++){
+				if (firstStep[i]=="a"){
+					firstStep[i]="z";
+				}else if (firstStep[i]=="b"){
+					firstStep[i]="a";
+				}else if (firstStep[i]=="c"){
+					firstStep[i]="b";
+				}else if (firstStep[i]=="d"){
+					firstStep[i]="c";
+				}else if (firstStep[i]=="e"){
+					firstStep[i]="d";
+				}else if (firstStep[i]=="f"){
+					firstStep[i]="e";
+				}else if (firstStep[i]=="g"){
+					firstStep[i]="f";
+				}else if (firstStep[i]=="h"){
+					firstStep[i]="g";
+				}else if (firstStep[i]=="i"){
+					firstStep[i]="h";
+				}else if (firstStep[i]=="j"){
+					firstStep[i]="i";
+				}else if (firstStep[i]=="k"){
+					firstStep[i]="j";
+				}else if (firstStep[i]=="l"){
+					firstStep[i]="k";
+				}else if (firstStep[i]=="m"){
+					firstStep[i]="l";
+				}else if (firstStep[i]=="n"){
+					firstStep[i]="m";
+				}else if (firstStep[i]=="o"){
+					firstStep[i]="n";
+				}else if (firstStep[i]=="p"){
+					firstStep[i]="o";
+				}else if (firstStep[i]=="q"){
+					firstStep[i]="p";
+				}else if (firstStep[i]=="r"){
+					firstStep[i]="q";
+				}else if (firstStep[i]=="s"){
+					firstStep[i]="r";
+				}else if (firstStep[i]=="t"){
+					firstStep[i]="s";
+				}else if (firstStep[i]=="u"){
+					firstStep[i]="t";
+				}else if (firstStep[i]=="v"){
+					firstStep[i]="u";
+				}else if (firstStep[i]=="w"){
+					firstStep[i]="v";
+				}else if (firstStep[i]=="x"){
+					firstStep[i]="w";
+				}else if (firstStep[i]=="y"){
+					firstStep[i]="x";
+				}else if (firstStep[i]=="z"){
+					firstStep[i]="y";
+				}
+			}
+			
+			var secondStep=firstStep;
+			for(var a=0;a<secondStep.length;a++){
+				if (secondStep[a]=="a"){
+					secondStep[a]="1";
+				}else if (secondStep[a]=="b"){
+					secondStep[a]="2";
+				}else if (secondStep[a]=="c"){
+					secondStep[a]="3";
+				}else if (secondStep[a]=="d"){
+					secondStep[a]="4";
+				}else if (secondStep[a]=="e"){
+					secondStep[a]="5";
+				}else if (secondStep[a]=="f"){
+					secondStep[a]="6";
+				}else if (secondStep[a]=="g"){
+					secondStep[a]="7";
+				}else if (secondStep[a]=="h"){
+					secondStep[a]="8";
+				}else if (secondStep[a]=="i"){
+					secondStep[a]="9";
+				}else if (secondStep[a]=="j"){
+					secondStep[a]="10";
+				}else if (secondStep[a]=="k"){
+					secondStep[a]="11";
+				}else if (secondStep[a]=="l"){
+					secondStep[a]="12";
+				}else if (secondStep[a]=="m"){
+					secondStep[a]="l3";
+				}else if (secondStep[a]=="n"){
+					secondStep[a]="14";
+				}else if (secondStep[a]=="o"){
+					secondStep[a]="15";
+				}else if (secondStep[a]=="p"){
+					secondStep[a]="16";
+				}else if (secondStep[a]=="q"){
+					secondStep[a]="17";
+				}else if (secondStep[a]=="r"){
+					secondStep[a]="18";
+				}else if (secondStep[a]=="s"){
+					secondStep[a]="19";
+				}else if (secondStep[a]=="t"){
+					secondStep[a]="20";
+				}else if (secondStep[a]=="u"){
+					secondStep[a]="21";
+				}else if (secondStep[a]=="v"){
+					secondStep[a]="22";
+				}else if (secondStep[a]=="w"){
+					secondStep[a]="23";
+				}else if (secondStep[a]=="x"){
+					secondStep[a]="24";
+				}else if (secondStep[a]=="y"){
+					secondStep[a]="25";
+				}else if (secondStep[a]=="z"){
+					secondStep[a]="26";
+				}
+			}
+			
+			
+			var thirdStep=secondStep;
+			var result=[];
+			for (var b=thirdStep.length-1;b>=0;b--){
+				result.push(thirdStep[b]);
+			}
+			
+			return(result);
+		}
+
+	</script>
+</head>
+<body onload="main()" >
+新建一个文件splitExercise3.html
+有一个明文的字符串，请对这个字符串进行加密：
+将这个字符串每个字母向前取一位，然后对应26个英文字母的顺序，最后倒序
+
+具体实施
+在主方法中定义一个明文字符串，将这个字符串传给子方法，在子方法中加密，将加密数据返回给主方法，在主方法中输出这个密文
+
+例子
+helpme
+
+密文加密第一步
+['g','d','k','o','l','d']
+
+密文加密第二步
+[7,4,11,15,12,4]
+
+密文加密第三步
+[4,12,15,11,4,7]
+
+
+
+</body>
+
+
+
+</html>
+
+
+
