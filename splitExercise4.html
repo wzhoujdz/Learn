@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style type="text/css">
+	</style>
+	<script>
+		function main(){
+			var secret="helpme";
+			var pass=functionPass(secret);
+			//var solve=functionSolve(secret);
+			console.log(pass);
+		}
+		function functionPass(secret){
+			var firstStep=secret.split("");
+			for(var i=0;i<firstStep.length;i++){
+				if(firstStep[i]="a"){
+					firstStep[i]="c";
+				}else if(firstStep[i]="b"){
+					firstStep[i]="d";
+				}else if(firstStep[i]="c"){
+					firstStep[i]="e";
+				}else if(firstStep[i]="d"){
+					firstStep[i]="f";
+				}else if(firstStep[i]="e"){
+					firstStep[i]="g";
+				}else if(firstStep[i]="f"){
+					firstStep[i]="h";
+				}else if(firstStep[i]="g"){
+					firstStep[i]="i";
+				}else if(firstStep[i]="h"){
+					firstStep[i]="j";
+				}else if(firstStep[i]="i"){
+					firstStep[i]="k";
+				}else if(firstStep[i]="j"){
+					firstStep[i]="l";
+				}else if(firstStep[i]="k"){
+					firstStep[i]="m";
+				}else if(firstStep[i]="l"){
+					firstStep[i]="n";
+				}else if(firstStep[i]="m"){
+					firstStep[i]="o";
+				}else if(firstStep[i]="n"){
+					firstStep[i]="p";
+				}else if(firstStep[i]="o"){
+					firstStep[i]="q";
+				}else if(firstStep[i]="p"){
+					firstStep[i]="r";
+				}else if(firstStep[i]="q"){
+					firstStep[i]="s";
+				}else if(firstStep[i]="r"){
+					firstStep[i]="t";
+				}else if(firstStep[i]="s"){
+					firstStep[i]="u";
+				}else if(firstStep[i]="t"){
+					firstStep[i]="v";
+				}else if(firstStep[i]="u"){
+					firstStep[i]="w";
+				}else if(firstStep[i]="v"){
+					firstStep[i]="x";
+				}else if(firstStep[i]="w"){
+					firstStep[i]="y";
+				}else if(firstStep[i]="x"){
+					firstStep[i]="z";
+				}else if(firstStep[i]="y"){
+					firstStep[i]="a";
+				}else if(firstStep[i]="z"){
+					firstStep[i]="b";
+				}
+			}
+			console.log(firstStep);
+			var secondStep=firstStep;
+			console.log('111111111111111111111');
+			console.log(secondStep);
+			console.log(secondStep.length);
+			console.log('222222222222222222222222');
+			for(var a=0;a<secondStep.length-1;a++){
+				var temp=secondStep[a+1];
+				console.log('3333333333333');
+				console.log(temp);
+				console.log('4444444444');
+				secondStep[a+1]=secondStep[a];
+				secondStep[a]=temp;
+			}
+			console.log(secondStep);
+			return;
+		}
+
+	</script>
+</head>
+<body onload="main()" >
+新建一个文件splitExercise4.html
+有一个明文的字符串，请对这个字符串进行加密和解密,自己定义加解密算法，要求要经过三层加密，对应三层解密。
+
+
+具体实施
+在主方法中定义一个明文字符串，将这个字符串传给加密子方法，在子方法中加密，将加密数据返回给主方法的一个变量
+
+在主方法中将这个变量传给解密子方法，在子方法中解密，将解密后的明文传给主方法，在主方法中输出这个明文。
+
+例子
+helpme
+
+输出
+helpme
+
+</body>
+
+
+
+</html>
+
+
+
