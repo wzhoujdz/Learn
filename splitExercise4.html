@@ -7,83 +7,266 @@
 	<script>
 		function main(){
 			var secret="helpme";
-			var pass=functionPass(secret);
-			//var solve=functionSolve(secret);
-			console.log(pass);
+			var encryption=functionPass(secret);
+			console.log(encryption);
+			var decipher=functionDecipher(encryption);
+			console.log(decipher);
 		}
 		function functionPass(secret){
 			var firstStep=secret.split("");
 			for(var i=0;i<firstStep.length;i++){
-				if(firstStep[i]="a"){
+				if(firstStep[i]=="a"){
 					firstStep[i]="c";
-				}else if(firstStep[i]="b"){
+				}else if(firstStep[i]=="b"){
 					firstStep[i]="d";
-				}else if(firstStep[i]="c"){
+				}else if(firstStep[i]=="c"){
 					firstStep[i]="e";
-				}else if(firstStep[i]="d"){
+				}else if(firstStep[i]=="d"){
 					firstStep[i]="f";
-				}else if(firstStep[i]="e"){
+				}else if(firstStep[i]=="e"){
 					firstStep[i]="g";
-				}else if(firstStep[i]="f"){
+				}else if(firstStep[i]=="f"){
 					firstStep[i]="h";
-				}else if(firstStep[i]="g"){
+				}else if(firstStep[i]=="g"){
 					firstStep[i]="i";
-				}else if(firstStep[i]="h"){
+				}else if(firstStep[i]=="h"){
 					firstStep[i]="j";
-				}else if(firstStep[i]="i"){
+				}else if(firstStep[i]=="i"){
 					firstStep[i]="k";
-				}else if(firstStep[i]="j"){
+				}else if(firstStep[i]=="j"){
 					firstStep[i]="l";
-				}else if(firstStep[i]="k"){
+				}else if(firstStep[i]=="k"){
 					firstStep[i]="m";
-				}else if(firstStep[i]="l"){
+				}else if(firstStep[i]=="l"){
 					firstStep[i]="n";
-				}else if(firstStep[i]="m"){
+				}else if(firstStep[i]=="m"){
 					firstStep[i]="o";
-				}else if(firstStep[i]="n"){
+				}else if(firstStep[i]=="n"){
 					firstStep[i]="p";
-				}else if(firstStep[i]="o"){
+				}else if(firstStep[i]=="o"){
 					firstStep[i]="q";
-				}else if(firstStep[i]="p"){
+				}else if(firstStep[i]=="p"){
 					firstStep[i]="r";
-				}else if(firstStep[i]="q"){
+				}else if(firstStep[i]=="q"){
 					firstStep[i]="s";
-				}else if(firstStep[i]="r"){
+				}else if(firstStep[i]=="r"){
 					firstStep[i]="t";
-				}else if(firstStep[i]="s"){
+				}else if(firstStep[i]=="s"){
 					firstStep[i]="u";
-				}else if(firstStep[i]="t"){
+				}else if(firstStep[i]=="t"){
 					firstStep[i]="v";
-				}else if(firstStep[i]="u"){
+				}else if(firstStep[i]=="u"){
 					firstStep[i]="w";
-				}else if(firstStep[i]="v"){
+				}else if(firstStep[i]=="v"){
 					firstStep[i]="x";
-				}else if(firstStep[i]="w"){
+				}else if(firstStep[i]=="w"){
 					firstStep[i]="y";
-				}else if(firstStep[i]="x"){
+				}else if(firstStep[i]=="x"){
 					firstStep[i]="z";
-				}else if(firstStep[i]="y"){
+				}else if(firstStep[i]=="y"){
 					firstStep[i]="a";
-				}else if(firstStep[i]="z"){
+				}else if(firstStep[i]=="z"){
 					firstStep[i]="b";
 				}
 			}
 			console.log(firstStep);
 			var secondStep=firstStep;
-			console.log('111111111111111111111');
-			console.log(secondStep);
-			console.log(secondStep.length);
-			console.log('222222222222222222222222');
 			for(var a=0;a<secondStep.length-1;a++){
 				var temp=secondStep[a+1];
-				console.log('3333333333333');
-				console.log(temp);
-				console.log('4444444444');
 				secondStep[a+1]=secondStep[a];
 				secondStep[a]=temp;
 			}
-			console.log(secondStep);
-			return;
+			
+			var thirdStep=secondStep;
+			console.log(thirdStep);
+			for(var b=0;b<thirdStep.length;b++){
+				if(thirdStep[b]=="a"){
+					thirdStep[b]="1";
+				}else if(thirdStep[b]=="b"){
+					thirdStep[b]="2";
+				}else if(thirdStep[b]=="c"){
+					thirdStep[b]="3";
+				}else if(thirdStep[b]=="d"){
+					thirdStep[b]="4";
+				}else if(thirdStep[b]=="e"){
+					thirdStep[b]="5";
+				}else if(thirdStep[b]=="f"){
+					thirdStep[b]="6";
+				}else if(thirdStep[b]=="g"){
+					thirdStep[b]="7";
+				}else if(thirdStep[b]=="h"){
+					thirdStep[b]="8";
+				}else if(thirdStep[b]=="i"){
+					thirdStep[b]="9";
+				}else if(thirdStep[b]=="j"){
+					thirdStep[b]="10";
+				}else if(thirdStep[b]=="k"){
+					thirdStep[b]="11";
+				}else if(thirdStep[b]=="l"){
+					thirdStep[b]="12";
+				}else if(thirdStep[b]=="m"){
+					thirdStep[b]="13";
+				}else if(thirdStep[b]=="n"){
+					thirdStep[b]="14";
+				}else if(thirdStep[b]=="o"){
+					thirdStep[b]="15";
+				}else if(thirdStep[b]=="p"){
+					thirdStep[b]="16";
+				}else if(thirdStep[b]=="q"){
+					thirdStep[b]="17";
+				}else if(thirdStep[b]=="r"){
+					thirdStep[b]="18";
+				}else if(thirdStep[b]=="s"){
+					thirdStep[b]="19";
+				}else if(thirdStep[b]=="t"){
+					thirdStep[b]="20";
+				}else if(thirdStep[b]=="u"){
+					thirdStep[b]="21";
+				}else if(thirdStep[b]=="v"){
+					thirdStep[b]="22";
+				}else if(thirdStep[b]=="w"){
+					thirdStep[b]="23";
+				}else if(thirdStep[b]=="x"){
+					thirdStep[b]="24";
+				}else if(thirdStep[b]=="y"){
+					thirdStep[b]="25";
+				}else if(thirdStep[b]=="z"){
+					thirdStep[b]="26";
+				}
+			}
+			
+			var encryption=thirdStep.join(",");
+			return(encryption);
+		}
+		
+		function functionDecipher(encryption){
+			var one=encryption.split(",");
+			console.log(one);
+			for(var x=0;x<one.length;x++){
+				if(one[x]=="1"){
+					one[x]="a";
+				}else if(one[x]=="2"){
+					one[x]="b";
+				}else if(one[x]=="3"){
+					one[x]="c";
+				}else if(one[x]=="4"){
+					one[x]="d";
+				}else if(one[x]=="5"){
+					one[x]="e";
+				}else if(one[x]=="6"){
+					one[x]="f";
+				}else if(one[x]=="7"){
+					one[x]="g";
+				}else if(one[x]=="8"){
+					one[x]="h";
+				}else if(one[x]=="9"){
+					one[x]="i";
+				}else if(one[x]=="10"){
+					one[x]="j";
+				}else if(one[x]=="11"){
+					one[x]="k";
+				}else if(one[x]=="12"){
+					one[x]="l";
+				}else if(one[x]=="13"){
+					one[x]="m";
+				}else if(one[x]=="14"){
+					one[x]="n";
+				}else if(one[x]=="15"){
+					one[x]="o";
+				}else if(one[x]=="16"){
+					one[x]="p";
+				}else if(one[x]=="17"){
+					one[x]="q";
+				}else if(one[x]=="18"){
+					one[x]="r";
+				}else if(one[x]=="19"){
+					one[x]="s";
+				}else if(one[x]=="20"){
+					one[x]="t";
+				}else if(one[x]=="21"){
+					one[x]="u";
+				}else if(one[x]=="22"){
+					one[x]="v";
+				}else if(one[x]=="23"){
+					one[x]="w";
+				}else if(one[x]=="24"){
+					one[x]="x";
+				}else if(one[x]=="25"){
+					one[x]="y";
+				}else if(one[x]=="26"){
+					one[x]="z";
+				}
+			}
+			/*var secondStep=firstStep;
+			for(var a=0;a<secondStep.length-1;a++){
+				var temp=secondStep[a+1];
+				secondStep[a+1]=secondStep[a];
+				secondStep[a]=temp;
+			}*/
+			var second=one;
+			for (var y=second.length-1;y>0;y--){
+				var tem=second[y-1];
+				second[y-1]=second[y];
+				second[y]=tem;
+			}
+			
+			var three=second;
+			for(var z=0;z<three.length;z++){
+				if(three[z]=="c"){
+					three[z]="a";
+				}else if(three[z]=="d"){
+					three[z]="b";
+				}else if(three[z]=="e"){
+					three[z]="c";
+				}else if(three[z]=="f"){
+					three[z]="d";
+				}else if(three[z]=="g"){
+					three[z]="e";
+				}else if(three[z]=="h"){
+					three[z]="f";
+				}else if(three[z]=="i"){
+					three[z]="g";
+				}else if(three[z]=="j"){
+					three[z]="h";
+				}else if(three[z]=="k"){
+					three[z]="i";
+				}else if(three[z]=="l"){
+					three[z]="j";
+				}else if(three[z]=="m"){
+					three[z]="k";
+				}else if(three[z]=="n"){
+					three[z]="l";
+				}else if(three[z]=="o"){
+					three[z]="m";
+				}else if(three[z]=="p"){
+					three[z]="n";
+				}else if(three[z]=="q"){
+					three[z]="o";
+				}else if(three[z]=="r"){
+					three[z]="p";
+				}else if(three[z]=="s"){
+					three[z]="q";
+				}else if(three[z]=="t"){
+					three[z]="r";
+				}else if(three[z]=="u"){
+					three[z]="s";
+				}else if(three[z]=="v"){
+					three[z]="t";
+				}else if(three[z]=="w"){
+					three[z]="u";
+				}else if(three[z]=="x"){
+					three[z]="v";
+				}else if(three[z]=="y"){
+					three[z]="w";
+				}else if(three[z]=="z"){
+					three[z]="x";
+				}else if(three[z]=="a"){
+					three[z]="y";
+				}else if(three[z]=="b"){
+					three[z]="z";
+				}
+			}
+				return(three);
 		}
 
 	</script>
