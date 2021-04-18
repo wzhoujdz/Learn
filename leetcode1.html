@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style type="text/css">
+	</style>
+	<script>
+		function main(){
+			var nums=[2,11,44,4,15,7];
+			var target=9;
+			var pass = functionTwoSum(nums,target);
+			console.log(pass);
+		}
+		
+		function functionTwoSum(nums,target){
+			var nums;
+			var target;
+			var output=[];
+			for(var i=0;i<nums.length;i++){
+				for(var a=i;a<nums.length;a++){
+					if(nums[i]+nums[a]==target){
+						output.push(i,a);
+					}
+				}
+			}
+			return(output);
+		}
+
+	</script>
+</head>
+<body onload="main()" >
+在主方法中有两个参数，一个是数字数组，另一个是数字，将这两个参数传给子方法，在子方法中找到两个能合成该数字的数，组成新数组，返回给主方法
+
+
+
+</body>
+
+
+
+</html>
+
+

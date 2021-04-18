@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style type="text/css">
+	</style>
+	<script>
+		function main(){
+			var param1=[1,2,3,4,5,6,7,8,9];
+			var param2=[11,12,13,14,15,16,17,18,19];
+			var openIndex=3;
+			var closeIndex=6;
+			var pass=functionTest(param1,param2,openIndex,closeIndex);
+			console.log(pass);
+		}
+		function functionTest(param1,param2,openIndex,closeIndex){
+			var arrayOne=param1.slice(openIndex,closeIndex);
+			var arrayTwo=param2.slice(openIndex,closeIndex);
+			var output=[];
+			for(var i=0; i<arrayOne.length;i++){
+				output.push(arrayOne[i]);
+			}
+			for(var a=arrayTwo.length-1; a>=0;a--){
+				output.push(arrayTwo[a]);
+			}
+			return(output);
+		}
+	
+		
+	</script>
+</head>
+<body onload="main()" >
+新建一个文件sliceExercise3.html
+数组截取合并
+在主方法中有两个数组
+向子方法中传入这两个数组，以及对这两个数组截取的首序和尾序，在子方法中对这两个数组进行截取，将截取的数组倒序拼接到一起，返回给主方法，在主方法中输出这个拼接的数组
+
+例子
+var param1=[1,2,3,4,5,6,7,8,9]
+var param2=[11,12,13,14,15,16,17,18,19]
+首序 var openIndex=3
+尾序 var closeInde=6
+test(param1,param2,openIndex,closeIndex);
+输出
+[4，5，6，16，15，14]
+
+
+</body>
+
+
+
+</html>
+
+
+
