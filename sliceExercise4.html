@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style type="text/css">
+	</style>
+	<script>
+		function main(){
+			var param1=[1,2,3,4,5]
+			var param2=[6,7,8,9,10]
+			var param3=[11,12,13,14,15]
+			var param4=[16,17,18,19,20]
+			var pass=test(param1,param2,param3,param4);
+			console.log(pass);
+		}
+		
+		function test(param1,param2,param3,param4){
+			var one=param1;
+			var array=[];
+			var l1=param1.length;
+			var b1=l1/2;
+			console.log(b1);
+			if(l1%2==0){
+				for (var i=0;i<b1;i++){
+					array.push(one[i]);
+				}
+			}else {
+				for (var i=0;i<=b1;i++){
+					array.push(one[i]);
+				}
+			}
+			var two=param2.slice(0,4);
+			for(var a=0;a<4;a++){
+				array.push(two[a]+2)
+			}
+			
+			var three=param3;
+			for (var b=three.length-1;b>three.length-5;b=b-1){
+				array.push(three[b]);
+			}
+			
+			var four=param4;
+			var sum=0;
+			for(var j=0;j<four.length;j++){
+				sum=sum+four[j];
+			}
+			array.push(sum);
+			
+			length=array.length-1
+			for (var o=length;o>=0;o--){
+				array.push(array[o]);
+			}
+			
+		
+			
+			return (array);
+		}
+
+	</script>
+</head>
+<body onload="main()" >
+新建一个文件sliceExercise4.html
+数组截取合并
+在主方法中有四个数组
+向子方法中传入这四个数组，在子方法中对这四个数组进行截取：
+第一个数组取这个数组的一半截取（数组个数如果是奇数，把中间的值也截取过来）
+第二个数组取这个数组的前四位（要求第二个数组必须大于等于5个数），并将这四个数分别加2取过来。
+第三个数组取这个数组的后四位（要求第二个数组必须大于等于5个数），倒叙取过来
+第四个数组对这个数组求总和，取过来。
+
+将四个数组截取的结果拼接成一个镜像数组返回给主方法，在主方法中输出这个拼接的数组
+
+例子
+var param1=[1,2,3,4,5]
+var param2=[6,7,8,9,10]
+var param3=[11,12,13,14,15]
+var param4=[16,17,18,19,20]
+test(param1,param2,param3,param4);
+输出
+[1,2,3,    8,9,10,11,  15,14,13,12,    90,    90,   12,13,14,15,   11,10,9,8,   3,2,1]
+
+</body>
+
+
+
+</html>
+
+
+
